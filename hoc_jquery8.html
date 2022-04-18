@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./jquery-ui/jquery-ui.js"></script>
+    <script type="text/javascript" src="./hoc_jquery8.js"></script>
+    <link rel="stylesheet" type="text/css" href="./jquery-ui/jquery-ui.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Resizable_1" style="border:1px solid #ccc;width: 250px;height: 150px;">
+        A
+    </div>
+    <div id="Resizable_2" style="border:1px solid #ccc;width: 250px;height: 150px;margin-top: 20px;background-color: red;">
+        B
+    </div>
+    <br/><br/>
+    <style>
+        .MyConnect{
+            margin: 100px 0px 0px 50px;
+            float: left;
+        }
+        li{
+            margin: 10px 0px 0px 0px;
+            padding: 10px;
+            width: 100px;
+            border: 1px solid #ccc;
+            display: block;
+            text-align: center;
+        }
+    </style>
+    <ul id="MySortable1" class="MyConnect">
+        <li>A-1</li>
+        <li>A-2</li>
+        <li>A-3</li>
+    </ul>
+    <ul id="MySortable2" class="MyConnect">
+        <li>B-1</li>
+        <li>B-2</li>
+        <li>B-3</li>
+    </ul>
+
+    <br/>
+    <br/>
+    <style>
+        .MyConnect1{
+            margin: 100px 0px 0px 50px;
+            float: left;
+        }
+        li{
+            margin: 10px 0px 0px 0px;
+            padding: 10px;
+            width: 100px;
+            border: 1px solid #ccc;
+            display: block;
+            text-align: center;
+        }
+        .ui-selecting{background-color: blueviolet;}
+        .ui-selected{background-color: #4cff00;color:red;}
+
+    </style>
+    <ul id="List1" class="MyConnect1">
+        <li data="1" class="B">A-1</li>
+        <li data="2" class="A">A-2</li>
+        <li data="3" class="A">A-3</li>
+    </ul>
+</body>
+</html>

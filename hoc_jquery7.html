@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--TIẾNG VIỆT UNICODE-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--CHẾ ĐỘ RESPONSIVE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./jquery-ui/jquery-ui.js"></script>
+    <script type="text/javascript" src="./hoc_jquery7.js"></script>
+    <link rel="stylesheet" type="text/css" href="./hoc_jquery7.css">
+    <link rel="stylesheet" type="text/css" href="./jquery-ui/jquery-ui.css">
+    <title>Document</title>
+</head>
+<body>
+    <a id="my-tooltip" title="Bạn click ở đây thì Progressbar sẽ chạy" href="javascript:StartProgressbar()">BẮT ĐẦU</a>
+    <br/>
+    <div id="my-prb">
+        <p id="my-prb-label">
+            Đang chờ bắt đầu
+        </p>
+    </div>
+    <hr/>
+
+    <p>Sinh nhật của bạn</p>
+    <input type="text" id = "birthday" style="width: 200px;"/>
+
+    <div id="my-accordion" style="width:500px">
+        <h3>Tab thứ 1</h3>
+        <div>Nội dung 1</div>
+        <h3>Tab thứ 2</h3>
+        <div>Nội dung 2</div>
+        <h3>Tab thứ 3</h3>
+        <div>Nội dung 3</div>
+    </div>
+    
+    <br/><br/>
+    <input type="text" id="complete" style="width: 450px;">
+    
+    <br/><br/>
+    <ul id="my-menu" style="width: 200px;">
+        <li>
+            <div>MENU A</div>
+            <ul>
+                <li>Menu A1</li>
+                <li>Menu A2</li>
+            </ul>
+        </li>
+        <li class="ui-state-disabled">
+            <div>MENU B</div>
+        </li>
+        <li>
+            <div>MENU C</div>
+        </li>
+    </ul>
+
+    <br/><br/>
+    <div id="myTabs" style="width:500px;">
+        <ul>
+            <li><a href="#tab_1">Giới thiệu</a></li>
+            <li><a href="#tab_2">Nội dung sơ lược</a></li>
+            <li><a href="#tab_3">Liên hệ chi tiết</a></li>
+        </ul>
+        <div id="tab_1"><p>Nội dung phần giới thiệu</p></div>
+        <div id="tab_2"><p>Nội dung phần nội dung sơ lược</p></div>
+        <div id="tab_3"><p>Nội dung phần liên hệ chi tiết</p></div>
+    </div>
+
+    <br/><br/>
+    SPINNER : <input type="text" id="mySpinner" value="0" style="width: 250px;"/>
+    <br/>
+    Giá trị hiện tại: <label id="SpinnerValue">0</label>
+
+    <br/><br/>
+    <div id="mySlider1" style="width: 250px;"></div> <label id="SliderValue1"></label>
+    <br/>
+    <div id="mySlider2" style="height: 150px;"></div> 
+    <br/>
+    <label id="SliderValue2"></label>
+
+    <br/><br/>
+    <style>
+        .ui-menu-item-wrapper{
+            height: 50px;
+            padding-left: 70px!important;
+        }
+        .AvartarClass.ui-icon{
+            width: 50px;
+            height: 50px;
+            background-position: center;
+            background-repeat: no;
+            background-size: cover ;
+        }
+    </style>
+    <select id="MySelect" style="width: 300px;">
+        <option value="1" dataClass="AvartarClass" dataStyle="background-image:url('./tml.jpg')">Lê Anh A</option>
+        <option value="2" dataClass="AvartarClass" dataStyle="background-image:url(./pyke.jpg')">Lê Anh B</option>
+        <option value="3" dataClass="AvartarClass" dataStyle="background-image:url(./example_flower.jpg')">Lê Anh C</option>
+    </select>
+    <br/>
+    <br/>
+    <fieldset>
+        <legend>Hiếu Phan thương ai nhất</legend>
+        <label>
+            <label>
+                <input type="radio" name="city" class="Mycheckboxradioclass"> James Lee
+            </label>
+            <br/>
+            <label>
+                <input type="radio" name="city" class="Mycheckboxradioclass"> Tony Trung
+            </label>
+            <br/>
+            <label>
+                <input type="radio" name="city" class="Mycheckboxradioclass"> Mini
+            </label>
+        </label>
+    </fieldset>
+
+    <br/><br/>
+    <fieldset>
+        <legend>CHECKBOX</legend>
+        <label>
+            <label>
+                <input type="checkbox" name="city" class="Mycheckboxradioclass"> ĐỌC SÁCH
+            </label>
+            <br/>
+            <label>
+                <input type="checkbox" name="city" class="Mycheckboxradioclass"> CHƠI GAME
+            </label>
+            <br/>
+            <label>
+                <input type="checkbox" name="city" class="Mycheckboxradioclass"> THỂ THAO
+            </label>
+        </label>
+    </fieldset>
+    <br/><br/>
+    <div style="clear: both;"></div>
+    <div id="PR_Draggable" style="width:500px;height:500px;border:1px solid #ccc;float:left;">
+    <!--div id="PR_Draggable" style="width:500px;height:500px;border:1px solid #ccc;overflow: scroll;float:left;"
+    Giống cái trên nhưng bỏ overflow:scroll-->
+        <div id="MyDraggable" style="width: 100px;height: 100px;background-color:#ff0000;"></div>
+    </div>  
+
+    <div id="MyDroppable" style="float:left;width: 300px;height: 300px;border: 1px solid #ff6a00;"></div>
+    <div style="clear: both;"></div>
+</body>
+</html>

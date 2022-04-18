@@ -1,0 +1,33 @@
+
+#hinh.w1{
+    width: 800px;
+    height: 1000px;
+}
+
+#hinh.w2{
+    width: 1200px;
+    height: 1400px;
+}
+
+#hinh.w3{
+    width: 1500px;
+    height: 1600px;
+}
+
+#btbChangeImage{
+    margin: 10px;
+    padding: 10px;
+    width: 80px;
+    text-align: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#btbChangeHeight{
+    margin: 10px;
+    padding: 10px;
+    width: 80px;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+}
